@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>حسين بلفقيه | مهندس برمجيات واجهات أمامية، خبير UI/UX وأكاديمي</title>
+  <meta name="title" content="حسين بلفقيه | مهندس برمجيات واجهات أمامية، خبير UI/UX وأكاديمي">
+  <meta name="description" content="الموقع الرسمي للمهندس حسين بلفقيه (Hussein Balfaqih) - مهندس برمجيات واجهات أمامية متخصص في React و Next.js و Tailwind CSS، مصمم تجربة وواجهة مستخدم (UI/UX)، معيد أكاديمي في تكنولوجيا المعلومات، وخبير في أتمتة الذكاء الاصطناعي (AI & Vibe Coding).">
+  <meta name="keywords" content="حسين بلفقيه, Hussein Balfaqih, مهندس واجهات أمامية, مطور فرونت إند, مصمم واجهات, UI UX Designer, Frontend Developer Yemen, React Developer, Next.js, Tailwind CSS, Vibe Coding, الذكاء الاصطناعي للبرمجة, معيد تكنولوجيا معلومات, بورتفوليو مهندس برمجيات, تصميم نظم التصميم Figma">
+  <meta name="author" content="حسين بلفقيه (Hussein Balfaqih)">
+  <meta name="publisher" content="حسين بلفقيه">
+
+  <!-- Search Engine Crawlers & Indexing Directives -->
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  
+  <!-- Canonical & Alternate Hreflang URLs -->
+  <link rel="canonical" href="https://husseinbalfaqih.dev/">
+  <link rel="alternate" hreflang="ar" href="https://husseinbalfaqih.dev/?lang=ar">
+  <link rel="alternate" hreflang="en" href="https://husseinbalfaqih.dev/?lang=en">
+  <link rel="alternate" hreflang="x-default" href="https://husseinbalfaqih.dev/">
+
+  <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://husseinbalfaqih.dev/">
+  <meta property="og:site_name" content="حسين بلفقيه | Hussein Balfaqih">
+  <meta property="og:title" content="حسين بلفقيه | مهندس برمجيات واجهات أمامية، خبير UI/UX وأكاديمي">
+  <meta property="og:description" content="استكشف بورتفوليو المهندس حسين بلفقيه: حلول ويب حديثة، أنظمة UI/UX متقدمة، هندسة واجهات تفاعلية فائقة الأداء، وتطبيقات أتمتة الذكاء الاصطناعي (AI & Vibe Coding).">
+  <meta property="og:image" content="assets/images/avatar.jpg">
+  <meta property="og:image:secure_url" content="assets/images/avatar.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="المهندس حسين بلفقيه - Frontend Engineer & UI/UX Specialist">
+  <meta property="og:locale" content="ar_AR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="profile:first_name" content="Hussein">
+  <meta property="profile:last_name" content="Balfaqih">
+  <meta property="profile:username" content="husseinbalfaqih">
+
+  <!-- Twitter / X Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://husseinbalfaqih.dev/">
+  <meta name="twitter:site" content="@husseinbalfaqih">
+  <meta name="twitter:creator" content="@husseinbalfaqih">
+  <meta name="twitter:title" content="حسين بلفقيه | Frontend Engineer & UI/UX Specialist">
+  <meta name="twitter:description" content="بورتفوليو تفاعلي يجمع بين هندسة الواجهات الحديثة، حس التصميم الإنساني، وأتمتة الذكاء الاصطناعي (Vibe Coding).">
+  <meta name="twitter:image" content="assets/images/avatar.jpg">
+  <meta name="twitter:image:alt" content="حسين بلفقيه Portfolio">
+
+  <!-- Mobile & PWA Theme Colors -->
+  <meta name="theme-color" content="#0B0F19" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+  <meta name="msapplication-TileColor" content="#0B0F19">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Hussein Balfaqih">
+  <meta name="application-name" content="Hussein Balfaqih Portfolio">
+
+  <!-- Structured Data (Schema.org JSON-LD for Google Rich Results & Knowledge Graph) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://husseinbalfaqih.dev/#person",
+        "name": "حسين بلفقيه",
+        "alternateName": ["Hussein Balfaqih", "مهندس حسين بلفقيه"],
+        "jobTitle": "Frontend Software Engineer & UI/UX Specialist",
+        "description": "مهندس برمجيات واجهات أمامية، مصمم ومطور تجربة وواجهة المستخدم، ومعيد أكاديمي في تكنولوجيا المعلومات مهتم بأتمتة الذكاء الاصطناعي وبحوث النظم الذكية.",
+        "image": "assets/images/avatar.jpg",
+        "url": "https://husseinbalfaqih.dev/",
+        "sameAs": [
+          "https://github.com/husseinbalfaqih",
+          "https://linkedin.com/in/husseinbalfaqih"
+        ],
+        "knowsAbout": [
+          "Frontend Engineering",
+          "React.js",
+          "Next.js",
+          "Tailwind CSS",
+          "TypeScript",
+          "JavaScript",
+          "UI/UX Design",
+          "Design Systems",
+          "Figma",
+          "AI & Vibe Coding",
+          "Prompt Engineering",
+          "Academic IT Education",
+          "Web Performance Optimization"
+        ],
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Faculty of Information Technology"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://husseinbalfaqih.dev/#website",
+        "url": "https://husseinbalfaqih.dev/",
+        "name": "حسين بلفقيه | Portfolio",
+        "description": "الموقع الرسمي ومعرض الأعمال للمهندس حسين بلفقيه",
+        "publisher": {
+          "@id": "https://husseinbalfaqih.dev/#person"
+        },
+        "inLanguage": ["ar", "en"]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Favicon icon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+  <!-- Tailwind CSS CDN with configuration -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              cyan: '#38BDF8',
+              indigo: '#6366F1',
+              violet: '#8B5CF6',
+              purple: '#A855F7',
+              dark: '#0B0F19',
+              darker: '#06080F',
+              card: '#111827',
+              border: '#1F2937'
+            }
+          },
+          fontFamily: {
+            cairo: ['Cairo', 'sans-serif'],
+            outfit: ['Outfit', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="theme-applied bg-[#0B0F19] text-slate-100 dark:bg-[#0B0F19] dark:text-slate-100 min-h-screen relative overflow-x-hidden selection:bg-indigo-500 selection:text-white transition-colors duration-300">
+
+  <!-- Ambient Light Orbs -->
+  <div class="ambient-glow-1 top-0 right-0"></div>
+  <div class="ambient-glow-2 top-[35%] left-[-100px]"></div>
+  <div class="ambient-glow-3 bottom-[20%] right-[-100px]"></div>
+
+  <!-- Background Grid Pattern -->
+  <div class="fixed inset-0 bg-grid-pattern opacity-40 pointer-events-none z-0"></div>
+
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <header class="sticky top-0 z-40 backdrop-blur-xl bg-[#0B0F19]/80 dark:bg-[#0B0F19]/80 border-b border-slate-800/80 transition-colors">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="flex items-center gap-3 group focus:outline-none">
+        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-cyan-400 p-[1.5px] shadow-lg shadow-indigo-500/20 group-hover:scale-105 transition duration-300">
+          <div class="w-full h-full bg-[#0B0F19] rounded-[14px] flex items-center justify-center font-mono font-black text-transparent bg-clip-text bg-gradient-to-tr from-cyan-400 to-indigo-400 text-lg">
+            HB
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-base font-bold text-slate-100 tracking-tight group-hover:text-cyan-400 transition" data-i18n="hero.name">
+            حسين بلفقيه
+          </span>
+          <span class="text-[11px] text-slate-400 font-mono tracking-wider">
+            Frontend & UI/UX • IT Academic
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-1 xl:gap-2">
+        <a href="#hero" class="px-3.5 py-2 rounded-xl text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800/50 transition" data-i18n="nav.home">
+          الرئيسية
+        </a>
+        <a href="#about" class="px-3.5 py-2 rounded-xl text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800/50 transition" data-i18n="nav.about">
+          عنّي
+        </a>
+        <a href="#skills" class="px-3.5 py-2 rounded-xl text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800/50 transition" data-i18n="nav.skills">
+          المهارات
+        </a>
+        <a href="#projects" class="px-3.5 py-2 rounded-xl text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800/50 transition" data-i18n="nav.projects">
+          المشاريع
+        </a>
+        <a href="#experience" class="px-3.5 py-2 rounded-xl text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800/50 transition" data-i18n="nav.experience">
+          الخبرات والتدريب
+        </a>
+        <a href="#contact" class="px-3.5 py-2 rounded-xl text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800/50 transition" data-i18n="nav.contact">
+          تواصل معي
+        </a>
+        <a href="academic.html" class="px-3.5 py-2 rounded-xl text-sm font-bold text-cyan-400 hover:text-white hover:bg-slate-800/60 transition flex items-center gap-1.5 border border-cyan-500/20 bg-indigo-500/10" data-i18n="nav.academicPortal">
+          <i data-lucide="graduation-cap" class="w-4 h-4"></i>
+          <span>البوابة الأكاديمية</span>
+        </a>
+      </nav>
+
+      <!-- Action Controls (Lang, Theme, CTA) -->
+      <div class="flex items-center gap-2.5">
+        
+        <!-- Language Switcher Pill -->
+        <button id="lang-toggle-btn" class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-800/80 hover:bg-slate-700/80 text-xs font-semibold text-cyan-400 border border-slate-700/80 transition focus:outline-none">
+          <i data-lucide="globe" class="w-3.5 h-3.5"></i>
+          <span id="lang-current-label">English</span>
+        </button>
+
+        <!-- Dark / Light Mode Switcher -->
+        <button id="theme-toggle-btn" class="p-2 rounded-full bg-slate-800/80 hover:bg-slate-700/80 text-slate-300 hover:text-white border border-slate-700/80 transition focus:outline-none" title="تبديل الوضع الليلي / الفاتح">
+          <i id="theme-icon-sun" data-lucide="sun" class="w-4 h-4 text-amber-400"></i>
+          <i id="theme-icon-moon" data-lucide="moon" class="w-4 h-4 text-indigo-400 hidden"></i>
+        </button>
+
+        <!-- Fast Color Palette Switcher (منتقي ألوان وثيمات الواجهة السريعة) -->
+        <div class="relative">
+          <button id="palette-toggle-btn" class="p-2 rounded-full bg-slate-800/80 hover:bg-slate-700/80 text-slate-300 hover:text-white border border-slate-700/80 transition focus:outline-none flex items-center gap-1.5 group relative" title="ألوان وثيمات الواجهة السريعة / Quick Color Themes" aria-label="Toggle Color Palette Menu">
+            <i data-lucide="palette" class="w-4 h-4 text-cyan-400 group-hover:rotate-45 transition duration-300"></i>
+            <span id="header-active-color-dot" class="w-2 h-2 rounded-full ring-1 ring-white/50 shadow-sm" style="background-color: var(--theme-primary);"></span>
+          </button>
+
+          <!-- Palette Dropdown Popover -->
+          <div id="palette-dropdown" class="hidden absolute top-full mt-3 end-0 w-80 p-4 rounded-3xl glass-panel shadow-2xl border border-slate-700/90 z-50 backdrop-blur-2xl transition-all duration-200">
+            <div class="flex items-center justify-between pb-3 mb-3 border-b border-slate-800">
+              <div class="flex items-center gap-2">
+                <i data-lucide="palette" class="w-4 h-4 text-cyan-400"></i>
+                <div>
+                  <h4 class="text-xs font-bold text-slate-100" data-i18n="palette.title">سمات وألوان الواجهة</h4>
+                  <span class="text-[10px] text-slate-400" data-i18n="palette.subtitle">تغيير الألوان بنقرة واحدة فائقة السرعة</span>
+                </div>
+              </div>
+              <button id="palette-reset-btn" class="text-[11px] text-slate-400 hover:text-cyan-400 transition flex items-center gap-1 bg-slate-800/60 px-2 py-1 rounded-lg border border-slate-700/60" title="استعادة اللون الافتراضي">
+                <i data-lucide="rotate-ccw" class="w-3 h-3"></i>
+                <span data-i18n="palette.reset">استعادة</span>
+              </button>
+            </div>
+
+            <!-- Palettes List Container (rendered by JS) -->
+            <div id="palettes-container" class="grid grid-cols-1 gap-1.5 mb-3 max-h-56 overflow-y-auto pr-1">
+              <!-- Dynamically populated by ColorThemeManager -->
+            </div>
+
+            <!-- Custom Color Picker Bar -->
+            <div class="pt-2.5 border-t border-slate-800 flex items-center justify-between bg-slate-900/60 p-2.5 rounded-2xl border border-slate-800">
+              <label for="custom-color-input" class="text-xs font-medium text-slate-300 flex items-center gap-2 cursor-pointer">
+                <i data-lucide="pipette" class="w-3.5 h-3.5 text-cyan-400"></i>
+                <span data-i18n="palette.custom">لون مخصص بالكامل:</span>
+              </label>
+              <div class="flex items-center gap-2">
+                <span id="custom-color-hex" class="text-[11px] font-mono text-cyan-400 font-bold uppercase">#6366F1</span>
+                <input type="color" id="custom-color-input" value="#6366F1" class="w-7 h-7 rounded-lg cursor-pointer bg-transparent border-0 p-0">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CV Button -->
+        <button id="cv-modal-trigger" class="hidden sm:flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-slate-800/70 hover:bg-slate-700/70 text-slate-200 text-xs font-semibold border border-slate-700 transition">
+          <i data-lucide="file-text" class="w-3.5 h-3.5 text-indigo-400"></i>
+          <span data-i18n="hero.ctaCV">السيرة الذاتية</span>
+        </button>
+
+        <!-- Primary CTA Button -->
+        <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-indigo-600 via-indigo-500 to-cyan-500 hover:from-indigo-500 hover:to-cyan-400 text-white text-xs font-bold shadow-lg shadow-indigo-500/25 transition shimmer-btn">
+          <span data-i18n="nav.hireMe">وظفني الآن</span>
+          <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-xl bg-slate-800/80 text-slate-300 hover:text-white border border-slate-700">
+          <i data-lucide="menu" class="w-5 h-5"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu-drawer" class="hidden lg:hidden border-t border-slate-800 bg-[#0B0F19]/95 backdrop-blur-2xl px-6 py-5 space-y-3">
+      <a href="#hero" class="block py-2 text-sm font-medium text-slate-200 hover:text-cyan-400" data-i18n="nav.home">الرئيسية</a>
+      <a href="#about" class="block py-2 text-sm font-medium text-slate-200 hover:text-cyan-400" data-i18n="nav.about">عنّي</a>
+      <a href="#skills" class="block py-2 text-sm font-medium text-slate-200 hover:text-cyan-400" data-i18n="nav.skills">المهارات</a>
+      <a href="#projects" class="block py-2 text-sm font-medium text-slate-200 hover:text-cyan-400" data-i18n="nav.projects">المشاريع</a>
+      <a href="#experience" class="block py-2 text-sm font-medium text-slate-200 hover:text-cyan-400" data-i18n="nav.experience">الخبرات والتدريب</a>
+      <a href="#contact" class="block py-2 text-sm font-medium text-slate-200 hover:text-cyan-400" data-i18n="nav.contact">تواصل معي</a>
+      <a href="academic.html" class="block py-2 text-sm font-bold text-cyan-400 hover:text-cyan-300 flex items-center gap-1.5" data-i18n="nav.academicPortal">
+        <i data-lucide="graduation-cap" class="w-4 h-4"></i>
+        <span>البوابة الأكاديمية والمشاريع</span>
+      </a>
+      
+      <!-- Mobile Color Quick Selector -->
+      <div class="pt-3 border-t border-slate-800">
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-xs font-semibold text-slate-300 flex items-center gap-1.5">
+            <i data-lucide="palette" class="w-3.5 h-3.5 text-cyan-400"></i>
+            <span data-i18n="palette.title">ألوان السمة:</span>
+          </span>
+          <span id="mobile-active-palette-name" class="text-[11px] text-cyan-400 font-medium"></span>
+        </div>
+        <div id="mobile-palettes-row" class="flex items-center gap-2 overflow-x-auto py-1">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <div class="pt-3 border-t border-slate-800 flex gap-2">
+        <a href="#contact" class="w-full text-center py-2.5 rounded-xl bg-indigo-600 text-white font-bold text-xs" data-i18n="nav.hireMe">وظفني الآن</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="relative z-10">
+
+    <!-- ============================================================
+         1. HERO SECTION
+         ============================================================ -->
+    <section id="hero" class="pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Hero Text Column -->
+          <div class="lg:col-span-7 space-y-6 text-right dir-aware">
+            
+            <!-- Availability Badge -->
+            <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-slate-800/80 border border-slate-700/80 shadow-inner">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+              <span class="text-xs font-semibold text-emerald-400" data-i18n="hero.badge">
+                متاح للمشاريع النوعية واستشارات الويب والـ UI/UX
+              </span>
+            </div>
+
+            <!-- Main Heading -->
+            <div class="space-y-2">
+              <span class="text-lg md:text-xl font-medium text-slate-400" data-i18n="hero.greeting">
+                مرحباً، أنا
+              </span>
+              <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
+                <span class="gradient-text-primary" data-i18n="hero.name">حسين بلفقيه</span>
+              </h1>
+              <h2 class="text-xl sm:text-2xl font-bold text-slate-200" data-i18n="hero.role">
+                مهندس برمجيات واجهات أمامية | خبير UI/UX | معيد أكاديمي في تكنولوجيا المعلومات
+              </h2>
+            </div>
+
+            <!-- Summary Paragraph -->
+            <p class="text-base sm:text-lg text-slate-400 leading-relaxed max-w-2xl" data-i18n="hero.summary">
+              أجمع بين عمق الهندسة البرمجية للواجهات، وحس التصميم الإنساني المتقن، والشغف الأكاديمي وأتمتة الذكاء الاصطناعي (AI & Vibe Coding) لصناعة تجارب رقمية استثنائية وعالية الأداء.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="pt-4 flex flex-wrap items-center gap-4">
+              <!-- Projects Button -->
+              <a href="#projects" class="shimmer-btn px-6 py-3.5 rounded-2xl bg-gradient-to-r from-indigo-600 via-indigo-500 to-cyan-500 hover:from-indigo-500 hover:to-cyan-400 text-white font-bold text-sm shadow-xl shadow-indigo-600/30 flex items-center gap-2.5 transition transform hover:-translate-y-0.5">
+                <span data-i18n="hero.ctaProjects">استعراض المشاريع</span>
+                <i data-lucide="arrow-down-left" class="w-4 h-4"></i>
+              </a>
+
+              <!-- Contact Button -->
+              <a href="#contact" class="px-6 py-3.5 rounded-2xl glass-card text-slate-200 hover:text-white font-semibold text-sm border border-slate-700 hover:border-slate-600 flex items-center gap-2 transition transform hover:-translate-y-0.5">
+                <i data-lucide="message-square" class="w-4 h-4 text-cyan-400"></i>
+                <span data-i18n="hero.ctaContact">تواصل معي</span>
+              </a>
+
+              <!-- CV Modal Button -->
+              <button id="cv-hero-btn" class="px-6 py-3.5 rounded-2xl bg-slate-800/80 hover:bg-slate-700/80 text-slate-300 hover:text-white font-semibold text-sm border border-slate-700 flex items-center gap-2 transition">
+                <i data-lucide="download" class="w-4 h-4 text-indigo-400"></i>
+                <span data-i18n="hero.ctaCV">تحميل السيرة الذاتية (CV)</span>
+              </button>
+            </div>
+
+            <!-- Key Quick Pillars Ticker -->
+            <div class="pt-6 border-t border-slate-800/80 grid grid-cols-2 sm:grid-cols-3 gap-4 text-xs font-mono text-slate-400">
+              <div class="flex items-center gap-2">
+                <i data-lucide="code" class="w-4 h-4 text-cyan-400"></i>
+                <span data-i18n="hero.floatingRole1">Frontend Architect</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="sparkles" class="w-4 h-4 text-indigo-400"></i>
+                <span data-i18n="hero.floatingRole2">UI/UX Craftsman</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="cpu" class="w-4 h-4 text-purple-400"></i>
+                <span data-i18n="hero.floatingRole3">AI & Vibe Coding</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Hero Visual & Portrait Column -->
+          <div class="lg:col-span-5 relative flex justify-center">
+            
+            <!-- Glow background circle -->
+            <div class="absolute inset-0 bg-gradient-to-tr from-indigo-500/20 to-cyan-500/20 rounded-full filter blur-3xl transform scale-90"></div>
+
+            <div class="relative w-full max-w-md">
+              
+              <!-- Avatar Frame with Gradient Rim -->
+              <div class="relative rounded-3xl p-1.5 bg-gradient-to-tr from-indigo-500 via-cyan-400 to-purple-500 shadow-2xl shadow-indigo-500/20">
+                <div class="w-full h-full rounded-[22px] overflow-hidden bg-slate-900">
+                  <img src="assets/images/avatar.jpg" alt="Hussein Balfaqih" class="w-full h-auto object-cover transform hover:scale-105 transition duration-700" loading="eager">
+                </div>
+              </div>
+
+              <!-- Floating Glass Badge 1: Frontend Specialist -->
+              <div class="absolute -top-6 -right-4 sm:-right-8 glass-panel px-4 py-2.5 rounded-2xl shadow-xl flex items-center gap-3 animate-soft-float">
+                <div class="w-9 h-9 rounded-xl bg-cyan-500/20 flex items-center justify-center text-cyan-400">
+                  <i data-lucide="layout" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <div class="text-[11px] text-slate-400">Specialization</div>
+                  <div class="text-xs font-bold text-slate-100">React & Next.js</div>
+                </div>
+              </div>
+
+              <!-- Floating Glass Badge 2: AI & Vibe Coding -->
+              <div class="absolute -bottom-6 -left-4 sm:-left-8 glass-panel px-4 py-2.5 rounded-2xl shadow-xl flex items-center gap-3 animate-soft-float-delayed">
+                <div class="w-9 h-9 rounded-xl bg-purple-500/20 flex items-center justify-center text-purple-400">
+                  <i data-lucide="bot" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <div class="text-[11px] text-slate-400">Modern Workflow</div>
+                  <div class="text-xs font-bold text-slate-100">AI & Vibe Coding</div>
+                </div>
+              </div>
+
+              <!-- Floating Glass Badge 3: Academic Teaching -->
+              <div class="absolute top-1/2 -left-6 sm:-left-12 transform -translate-y-1/2 glass-panel px-3.5 py-2 rounded-xl shadow-lg flex items-center gap-2 hidden sm:flex">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+                <span class="text-xs font-semibold text-slate-200">IT Academic TA</span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         2. ABOUT ME SECTION & STATS
+         ============================================================ -->
+    <section id="about" class="py-20 bg-slate-950/40 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+        
+        <!-- Section Header -->
+        <div class="max-w-3xl space-y-4">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 text-cyan-400 border border-indigo-500/20 text-xs font-bold uppercase tracking-wider" data-i18n="about.tag">
+            الهوية المهنية والمسار
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-black text-slate-100 leading-tight" data-i18n="about.title">
+            ما وراء الشفرة: هندسة، إبداع، وشغف بنقل المعرفة
+          </h2>
+          <p class="text-base text-slate-400 leading-relaxed" data-i18n="about.paragraph1">
+            أنا مهندس برمجيات واجهات أمامية ومصمم تجربة مستخدم، أعمل كمعيد وأكاديمي في كلية تكنولوجيا المعلومات. نشاطي يرتكز على نقطة التقاء فريدة: بناء أنظمة ويب فائقة السرعة والجمال، وتصميم رحلات مستخدم سلسة، ونقل هذه المهارات إلى الجيل الصاعد.
+          </p>
+          <p class="text-base text-slate-400 leading-relaxed" data-i18n="about.paragraph2">
+            مع تسارع ثورة الذكاء الاصطناعي، أتبنى بنشاط تقنيات أتمتة البرمجة و(AI & Vibe Coding) لدمج النماذج الذكية في مسارات تطوير البرمجيات، إلى جانب اهتمامي البحثي في تقييم فاعلية تقنيات التعليم الرقمي.
+          </p>
+        </div>
+
+        <!-- 4 Pillars Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Pillar 1 -->
+          <div class="glass-card p-6 rounded-3xl relative overflow-hidden group">
+            <div class="w-12 h-12 rounded-2xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center mb-5 group-hover:scale-110 transition duration-300">
+              <i data-lucide="layers" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-100 mb-2" data-i18n="about.pillars.code.title">
+              هندسة نظيفة وأداء صارم
+            </h3>
+            <p class="text-sm text-slate-400 leading-relaxed" data-i18n="about.pillars.code.desc">
+              كتابة شيفرات معيارية قابلة للتوسع، خفيفة الوزن، ومتوافقة تماماً مع معايير الويب وسرعة التحميل (Core Web Vitals).
+            </p>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="glass-card p-6 rounded-3xl relative overflow-hidden group">
+            <div class="w-12 h-12 rounded-2xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center mb-5 group-hover:scale-110 transition duration-300">
+              <i data-lucide="palette" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-100 mb-2" data-i18n="about.pillars.design.title">
+              تصميم واجهات وتجربة مدروسة
+            </h3>
+            <p class="text-sm text-slate-400 leading-relaxed" data-i18n="about.pillars.design.desc">
+              بناء أنظمة تصميم (Design Systems) تفاعلية، متوازنة بصرياً، ومصممة لتحقيق أعلى معدلات تفاعل وسهولة استخدام.
+            </p>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="glass-card p-6 rounded-3xl relative overflow-hidden group">
+            <div class="w-12 h-12 rounded-2xl bg-purple-500/10 text-purple-400 flex items-center justify-center mb-5 group-hover:scale-110 transition duration-300">
+              <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-100 mb-2" data-i18n="about.pillars.academic.title">
+              تدريس أكاديمي وإرشاد تقني
+            </h3>
+            <p class="text-sm text-slate-400 leading-relaxed" data-i18n="about.pillars.academic.desc">
+              تقديم مساقات برمجية جامعية وورش عمل تطبيقية تصقل مهارات مئات الطلاب في مجالات الواجهات وحل المشكلات.
+            </p>
+          </div>
+
+          <!-- Pillar 4 -->
+          <div class="glass-card p-6 rounded-3xl relative overflow-hidden group">
+            <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-5 group-hover:scale-110 transition duration-300">
+              <i data-lucide="zap" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-100 mb-2" data-i18n="about.pillars.ai.title">
+              أتمتة الذكاء الاصطناعي
+            </h3>
+            <p class="text-sm text-slate-400 leading-relaxed" data-i18n="about.pillars.ai.desc">
+              تسريع عجلة الابتكار وتطوير الواجهات بالاستفادة من أحدث أدوات التوليد البرمجي وأسلوب Vibe Coding.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Numbers / Stats Grid -->
+        <div id="stats-grid" class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 pt-4">
+          <!-- Dynamically populated from data.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         3. TECHNICAL SKILLS SECTION
+         ============================================================ -->
+    <section id="skills" class="py-20 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-4">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 text-xs font-bold uppercase tracking-wider" data-i18n="skills.tag">
+            الترسانة التقنية والمهارات
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-black text-slate-100 leading-tight" data-i18n="skills.title">
+            المهارات والأدوات التي أعتمد عليها في تحويل الأفكار إلى واقع
+          </h2>
+        </div>
+
+        <!-- Skills Categories Grid -->
+        <div id="skills-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Dynamically populated from data.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         4. FEATURED PROJECTS SECTION
+         ============================================================ -->
+    <section id="projects" class="py-20 bg-slate-950/40 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        
+        <!-- Section Header & Filter Tabs -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+          <div class="max-w-2xl space-y-3">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20 text-xs font-bold uppercase tracking-wider" data-i18n="projects.tag">
+              معرض الأعمال المختارة
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-black text-slate-100 leading-tight" data-i18n="projects.title">
+              مشاريع رقمية تجمع بين متانة الكود وجمال التجربة
+            </h2>
+          </div>
+
+          <!-- Category Filter Buttons -->
+          <div class="flex flex-wrap items-center gap-2 p-1.5 rounded-2xl glass-card border border-slate-800">
+            <button class="filter-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-indigo-600 text-white shadow-md shadow-indigo-500/30" data-filter="all" data-i18n="projects.filterAll">
+              الكل
+            </button>
+            <button class="filter-btn px-4 py-2 rounded-xl text-xs font-bold text-slate-400 hover:text-white transition" data-filter="web-app" data-i18n="projects.filterWeb">
+              تطبيقات ويب
+            </button>
+            <button class="filter-btn px-4 py-2 rounded-xl text-xs font-bold text-slate-400 hover:text-white transition" data-filter="ui-ux" data-i18n="projects.filterUIUX">
+              UI/UX
+            </button>
+            <button class="filter-btn px-4 py-2 rounded-xl text-xs font-bold text-slate-400 hover:text-white transition" data-filter="ai-research" data-i18n="projects.filterAI">
+              ذكاء اصطناعي وأبحاث
+            </button>
+          </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Dynamically populated from data.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         5. EXPERIENCE & MENTORSHIP SECTION (TIMELINE)
+         ============================================================ -->
+    <section id="experience" class="py-20 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-4">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 text-cyan-400 border border-indigo-500/20 text-xs font-bold uppercase tracking-wider" data-i18n="experience.tag">
+            الخط الزمني للمسيرة
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-black text-slate-100 leading-tight" data-i18n="experience.title">
+            محطات في التدريس الأكاديمي، العمل الحر، وبناء الحلول الرقمية
+          </h2>
+        </div>
+
+        <!-- Central Timeline Container -->
+        <div class="relative max-w-4xl mx-auto">
+          <!-- Central vertical line for desktop -->
+          <div class="hidden md:block absolute top-0 bottom-0 left-1/2 transform -translate-x-1/2 w-0.5 bg-gradient-to-b from-indigo-500 via-cyan-500 to-transparent"></div>
+
+          <!-- Timeline items -->
+          <div id="timeline-container" class="space-y-4">
+            <!-- Dynamically populated from data.js -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         6. CONTACT SECTION
+         ============================================================ -->
+    <section id="contact" class="py-20 bg-slate-950/60 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        
+        <div class="max-w-3xl space-y-4">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 text-xs font-bold uppercase tracking-wider" data-i18n="contact.tag">
+            ابدأ تعاوناً جديداً
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-black text-slate-100 leading-tight" data-i18n="contact.title">
+            هل لديك مشروع طموح أو فرصة تعاون؟ دعنا نتحدث!
+          </h2>
+          <p class="text-base text-slate-400 leading-relaxed" data-i18n="contact.desc">
+            أنا متاح دائماً لمناقشة مشاريع الواجهات الأمامية، وتصميم أنظمة وتجارب المستخدم، والورش التدريبية، والاستشارات التقنية.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          <!-- Contact Info Cards -->
+          <div class="lg:col-span-5 space-y-4">
+            
+            <!-- Email Card -->
+            <a href="mailto:hussein.balfaqih@example.com" class="glass-card p-5 rounded-2xl flex items-center gap-4 group">
+              <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-cyan-400 flex items-center justify-center shrink-0 group-hover:scale-110 transition">
+                <i data-lucide="mail" class="w-5 h-5"></i>
+              </div>
+              <div class="overflow-hidden">
+                <div class="text-xs text-slate-400" data-i18n="contact.emailLabel">البريد الإلكتروني</div>
+                <div class="text-sm font-bold text-slate-200 truncate group-hover:text-cyan-400 transition" data-i18n="contact.emailDirect">
+                  hussein.balfaqih@example.com
+                </div>
+              </div>
+            </a>
+
+            <!-- WhatsApp Card -->
+            <a href="https://wa.me/967770000000" target="_blank" rel="noopener noreferrer" class="glass-card p-5 rounded-2xl flex items-center gap-4 group">
+              <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center shrink-0 group-hover:scale-110 transition">
+                <i data-lucide="phone" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <div class="text-xs text-slate-400">WhatsApp / Direct Call</div>
+                <div class="text-sm font-bold text-slate-200 group-hover:text-emerald-400 transition font-mono" data-i18n="contact.phoneDirect">
+                  +967 770 000 000
+                </div>
+              </div>
+            </a>
+
+            <!-- Location Card -->
+            <div class="glass-card p-5 rounded-2xl flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center shrink-0">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <div class="text-xs text-slate-400">Location</div>
+                <div class="text-sm font-bold text-slate-200" data-i18n="contact.location">
+                  حضرموت، اليمن (متاح للعمل عن بُعد عالمياً)
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links Grid -->
+            <div class="pt-2 flex items-center gap-3">
+              <a href="https://github.com/husseinbalfaqih" target="_blank" rel="noopener noreferrer" class="flex-1 py-3 px-4 glass-card rounded-2xl flex items-center justify-center gap-2 text-slate-300 hover:text-white hover:border-indigo-500/50 transition">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path></svg>
+                <span class="text-xs font-bold">GitHub</span>
+              </a>
+              <a href="https://linkedin.com/in/husseinbalfaqih" target="_blank" rel="noopener noreferrer" class="flex-1 py-3 px-4 glass-card rounded-2xl flex items-center justify-center gap-2 text-slate-300 hover:text-cyan-400 hover:border-cyan-500/50 transition">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.4 9.74V9.96H5.06v8.54z"></path></svg>
+                <span class="text-xs font-bold">LinkedIn</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Contact Form -->
+          <div class="lg:col-span-7 glass-panel p-6 sm:p-8 rounded-3xl border border-slate-800">
+            <form id="contact-form" class="space-y-4">
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <!-- Name -->
+                <div class="space-y-1.5">
+                  <label for="form-name" class="block text-xs font-semibold text-slate-300" data-i18n="contact.nameLabel">الاسم الكامل</label>
+                  <input type="text" id="form-name" required class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-700/80 text-sm text-slate-100 focus:outline-none focus:border-indigo-500 transition placeholder-slate-500" data-i18n-placeholder="contact.namePlaceholder">
+                </div>
+
+                <!-- Email -->
+                <div class="space-y-1.5">
+                  <label for="form-email" class="block text-xs font-semibold text-slate-300" data-i18n="contact.emailLabel">البريد الإلكتروني</label>
+                  <input type="email" id="form-email" required class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-700/80 text-sm text-slate-100 focus:outline-none focus:border-indigo-500 transition placeholder-slate-500" data-i18n-placeholder="contact.emailPlaceholder">
+                </div>
+              </div>
+
+              <!-- Subject -->
+              <div class="space-y-1.5">
+                <label for="form-subject" class="block text-xs font-semibold text-slate-300" data-i18n="contact.subjectLabel">موضوع الرسالة</label>
+                <input type="text" id="form-subject" required class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-700/80 text-sm text-slate-100 focus:outline-none focus:border-indigo-500 transition placeholder-slate-500" data-i18n-placeholder="contact.subjectPlaceholder">
+              </div>
+
+              <!-- Message -->
+              <div class="space-y-1.5">
+                <label for="form-message" class="block text-xs font-semibold text-slate-300" data-i18n="contact.messageLabel">تفاصيل المشروع أو الرسالة</label>
+                <textarea id="form-message" rows="4" required class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-700/80 text-sm text-slate-100 focus:outline-none focus:border-indigo-500 transition placeholder-slate-500" data-i18n-placeholder="contact.messagePlaceholder"></textarea>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="w-full py-3.5 px-6 rounded-2xl bg-gradient-to-r from-indigo-600 via-indigo-500 to-cyan-500 hover:from-indigo-500 hover:to-cyan-400 text-white font-bold text-sm shadow-xl shadow-indigo-600/25 transition shimmer-btn flex items-center justify-center gap-2">
+                <i data-lucide="send" class="w-4 h-4"></i>
+                <span data-i18n="contact.submitBtn">إرسال الرسالة الآن</span>
+              </button>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="border-t border-slate-800 bg-[#06080F] py-12 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-right">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-xl bg-indigo-600/30 text-cyan-400 flex items-center justify-center font-mono font-bold text-sm">
+          HB
+        </div>
+        <span class="text-sm font-semibold text-slate-200" data-i18n="hero.name">حسين بلفقيه</span>
+      </div>
+
+      <p class="text-xs text-slate-400" data-i18n="footer.tagline">
+        صُمم وبُني بكل شغف وإتقان باستخدام أحدث معايير الويب.
+      </p>
+
+      <p class="text-xs text-slate-400 font-mono" data-i18n="footer.rights">
+        جميع الحقوق محفوظة © حسين بلفقيه 2026
+      </p>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       PROJECT DETAILS MODAL
+       ============================================================ -->
+  <div id="project-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop bg-slate-950/80 backdrop-blur-md">
+    <div class="modal-content glass-panel w-full max-w-3xl rounded-3xl overflow-hidden border border-slate-800 shadow-2xl max-h-[90vh] flex flex-col">
+      
+      <!-- Modal Header with Image -->
+      <div class="relative aspect-video max-h-72 w-full overflow-hidden shrink-0">
+        <img id="modal-img" src="" alt="Project Image" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+        <button id="project-modal-close" class="absolute top-4 left-4 p-2 rounded-full bg-slate-900/80 text-slate-300 hover:text-white border border-slate-700/80">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+        <div class="absolute bottom-4 right-4 left-4">
+          <span id="modal-category" class="px-3 py-1 rounded-full text-xs font-mono font-bold bg-indigo-600 text-white border border-indigo-400/30"></span>
+          <h3 id="modal-title" class="text-2xl font-black text-white mt-2"></h3>
+        </div>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="p-6 overflow-y-auto space-y-6">
+        <p id="modal-desc" class="text-sm text-slate-300 leading-relaxed"></p>
+
+        <!-- Key Features Checklist -->
+        <div>
+          <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Key Features & Engineering Highlights</h4>
+          <ul id="modal-features" class="space-y-2"></ul>
+        </div>
+
+        <!-- Tech Stack Badges -->
+        <div>
+          <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Technologies Used</h4>
+          <div id="modal-tags" class="flex flex-wrap gap-2"></div>
+        </div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="p-5 border-t border-slate-800/80 flex items-center justify-end gap-3 shrink-0 bg-slate-900/40">
+        <a id="modal-code-btn" href="#" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-slate-800 text-slate-200 hover:text-white text-xs font-bold border border-slate-700 flex items-center gap-1.5 transition">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path></svg>
+          <span>Source Code</span>
+        </a>
+        <a id="modal-demo-btn" href="#" target="_blank" rel="noopener noreferrer" class="px-5 py-2 rounded-xl bg-gradient-to-r from-indigo-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 text-white text-xs font-bold shadow-lg shadow-indigo-500/20 flex items-center gap-1.5 transition">
+          <i data-lucide="external-link" class="w-4 h-4"></i>
+          <span>Live Demo</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============================================================
+       CV / RESUME MODAL
+       ============================================================ -->
+  <div id="cv-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop bg-slate-950/80 backdrop-blur-md">
+    <div class="modal-content glass-panel w-full max-w-2xl rounded-3xl overflow-hidden border border-slate-800 shadow-2xl max-h-[90vh] flex flex-col">
+      
+      <!-- Header -->
+      <div class="p-5 border-b border-slate-800 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <i data-lucide="file-text" class="w-5 h-5 text-cyan-400"></i>
+          <h3 class="font-bold text-slate-100 text-base" data-i18n="cvModal.title">السيرة الذاتية - حسين بلفقيه</h3>
+        </div>
+        <button id="cv-modal-close" class="p-2 rounded-xl bg-slate-800 text-slate-400 hover:text-white">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+      <!-- Body -->
+      <div id="cv-modal-body" class="p-6 overflow-y-auto space-y-6">
+        <!-- Rendered from main.js -->
+      </div>
+
+      <!-- Footer Actions -->
+      <div class="p-4 border-t border-slate-800 bg-slate-900/50 flex items-center justify-end gap-3">
+        <button id="cv-print-btn" class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold border border-slate-700 flex items-center gap-1.5 transition">
+          <i data-lucide="printer" class="w-4 h-4 text-cyan-400"></i>
+          <span data-i18n="cvModal.printBtn">طباعة السيرة</span>
+        </button>
+        <button onclick="window.print()" class="px-5 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold flex items-center gap-1.5 transition">
+          <i data-lucide="download" class="w-4 h-4"></i>
+          <span data-i18n="cvModal.downloadBtn">تحميل بصيغة PDF</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============================================================
+       FLOATING QUICK COLOR DOCK (شريط الألوان السريع العائم)
+       ============================================================ -->
+  <aside id="floating-color-bar" class="fixed bottom-6 start-6 z-40 flex items-center gap-2 p-1.5 sm:p-2 rounded-2xl glass-panel border border-slate-700/80 shadow-2xl backdrop-blur-2xl transition-all duration-300" aria-label="شريط ألوان الموقع السريع">
+    <button id="floating-palette-btn" class="p-2 rounded-xl bg-slate-800/80 text-cyan-400 hover:text-white hover:bg-slate-700/80 transition flex items-center gap-1.5 focus:outline-none" title="تغيير ثيم ولون الواجهة بنقرة واحدة">
+      <i data-lucide="palette" class="w-4 h-4"></i>
+      <span class="hidden md:inline text-[11px] font-bold text-slate-200" data-i18n="palette.dockTitle">الألوان السريعة</span>
+    </button>
+    <div id="floating-swatches" class="flex items-center gap-1.5">
+      <!-- 6 Quick Color Dots populated dynamically -->
+    </div>
+  </aside>
+
+  <!-- ============================================================
+       TOAST NOTIFICATION
+       ============================================================ -->
+  <div id="toast-notification" class="fixed bottom-6 right-6 z-50 flex items-center gap-3 px-5 py-3.5 rounded-2xl glass-panel border border-emerald-500/40 text-emerald-300 text-xs font-bold shadow-2xl transition-all duration-300 transform translate-y-24 opacity-0">
+    <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-400"></i>
+    <span id="toast-message">تم إرسال رسالتك بنجاح!</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

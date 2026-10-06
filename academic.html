@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>البورتفوليو الأكاديمي والمعرض المهني | م. حسين بلفقيه</title>
+  <meta name="title" content="البورتفوليو الأكاديمي والمعرض المهني | م. حسين بلفقيه">
+  <meta name="description" content="البوابة الأكاديمية والمهنية للمهندس حسين بلفقيه (Hussein Balfaqih) - معيد أكاديمي في تكنولوجيا المعلومات، مهندس برمجيات واجهات أمامية، خبير UI/UX ومُدرب أتمتة الذكاء الاصطناعي (AI & Vibe Coding).">
+  <meta name="keywords" content="حسين بلفقيه, Hussein Balfaqih, البورتفوليو الأكاديمي, تدريس تكنولوجيا المعلومات, مساقات الفرونت إند, بحوث UI UX, Vibe Coding, مشاريع التخرج">
+  <meta name="author" content="حسين بلفقيه (Hussein Balfaqih)">
+
+  <!-- Open Graph / Social Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="البورتفوليو الأكاديمي والمعرض المهني | م. حسين بلفقيه">
+  <meta property="og:description" content="استكشف المساقات الأكاديمية، الأبحاث، ورش العمل، ومعرض الأعمال للمهندس حسين بلفقيه.">
+  <meta property="og:image" content="assets/images/avatar.jpg">
+
+  <!-- Mobile & PWA Theme Colors -->
+  <meta name="theme-color" content="#0B0F19" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+
+  <!-- Google Fonts: Cairo & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Favicon icon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+
+  <!-- Tailwind CSS CDN with configuration -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              cyan: 'var(--theme-secondary)',
+              indigo: 'var(--theme-primary)',
+              violet: 'var(--theme-accent)',
+              purple: 'var(--theme-accent)',
+              dark: '#0B0F19',
+              darker: '#06080F',
+              card: '#111827',
+              border: '#1F2937'
+            }
+          },
+          fontFamily: {
+            cairo: ['Cairo', 'sans-serif'],
+            outfit: ['Outfit', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="theme-applied bg-[#0B0F19] text-slate-100 dark:bg-[#0B0F19] dark:text-slate-100 min-h-screen relative overflow-x-hidden selection:bg-indigo-500 selection:text-white transition-colors duration-300">
+
+  <!-- Ambient Light Orbs -->
+  <div class="ambient-glow-1 top-0 right-0"></div>
+  <div class="ambient-glow-2 top-[35%] left-[-100px]"></div>
+  <div class="ambient-glow-3 bottom-[20%] right-[-100px]"></div>
+
+  <!-- Background Grid Pattern -->
+  <div class="fixed inset-0 bg-grid-pattern opacity-40 pointer-events-none z-0"></div>
+
+  <!-- ============================================================
+       HEADER / NAVBAR
+       ============================================================ -->
+  <header class="sticky top-0 z-40 backdrop-blur-xl bg-[#0B0F19]/80 dark:bg-[#0B0F19]/80 border-b border-slate-800/80 transition-colors">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-3 group focus:outline-none">
+        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-cyan-400 p-[1.5px] shadow-lg shadow-indigo-500/20 group-hover:scale-105 transition duration-300">
+          <div class="w-full h-full bg-[#0B0F19] rounded-[14px] flex items-center justify-center font-mono font-black text-transparent bg-clip-text bg-gradient-to-tr from-cyan-400 to-indigo-400 text-lg">
+            HB
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-base font-bold text-slate-100 tracking-tight group-hover:text-cyan-400 transition" data-i18n="hero.name">
+            حسين بلفقيه
+          </span>
+          <span class="text-[11px] text-cyan-400 font-mono tracking-wider" data-i18n="acadNav.badge">
+            البوابة الأكاديمية والمهنية
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-1 xl:gap-2">
+        <a href="index.html" class="px-3.5 py-2 rounded-xl text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800/50 transition flex items-center gap-1.5">
+          <i data-lucide="home" class="w-4 h-4 text-cyan-400"></i>
+          <span data-i18n="acadNav.mainHome">الرئيسية</span>
+        </a>
+        <a href="#courses" class="px-3.5 py-2 rounded-xl text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800/50 transition flex items-center gap-1.5">
+          <i data-lucide="book-open" class="w-4 h-4 text-cyan-400"></i>
+          <span data-i18n="acadNav.courses">المساقات والأبحاث</span>
+        </a>
+        <a href="#projects" class="px-3.5 py-2 rounded-xl text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800/50 transition flex items-center gap-1.5">
+          <i data-lucide="layout-grid" class="w-4 h-4 text-cyan-400"></i>
+          <span data-i18n="acadNav.projects">معرض الأعمال</span>
+        </a>
+        <a href="#mentorship" class="px-3.5 py-2 rounded-xl text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800/50 transition flex items-center gap-1.5">
+          <i data-lucide="award" class="w-4 h-4 text-cyan-400"></i>
+          <span data-i18n="acadNav.mentorship">إنجازات الطلاب</span>
+        </a>
+        <a href="#resources" class="px-3.5 py-2 rounded-xl text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800/50 transition flex items-center gap-1.5">
+          <i data-lucide="download-cloud" class="w-4 h-4 text-cyan-400"></i>
+          <span data-i18n="acadNav.resources">الموارد العلمية</span>
+        </a>
+      </nav>
+
+      <!-- Action Controls (Lang, Theme, Palette, Back CTA) -->
+      <div class="flex items-center gap-2.5">
+        
+        <!-- Language Switcher Pill -->
+        <button id="lang-toggle-btn" class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-800/80 hover:bg-slate-700/80 text-xs font-semibold text-cyan-400 border border-slate-700/80 transition focus:outline-none">
+          <i data-lucide="globe" class="w-3.5 h-3.5"></i>
+          <span id="lang-current-label">English</span>
+        </button>
+
+        <!-- Dark / Light Mode Switcher -->
+        <button id="theme-toggle-btn" class="p-2 rounded-full bg-slate-800/80 hover:bg-slate-700/80 text-slate-300 hover:text-white border border-slate-700/80 transition focus:outline-none" title="تبديل الوضع الليلي / الفاتح">
+          <i id="theme-icon-sun" data-lucide="sun" class="w-4 h-4 text-amber-400"></i>
+          <i id="theme-icon-moon" data-lucide="moon" class="w-4 h-4 text-indigo-400 hidden"></i>
+        </button>
+
+        <!-- Fast Color Palette Switcher -->
+        <div class="relative">
+          <button id="palette-toggle-btn" class="p-2 rounded-full bg-slate-800/80 hover:bg-slate-700/80 text-slate-300 hover:text-white border border-slate-700/80 transition focus:outline-none flex items-center gap-1.5 group relative" title="ألوان وثيمات الواجهة السريعة / Quick Color Themes" aria-label="Toggle Color Palette Menu">
+            <i data-lucide="palette" class="w-4 h-4 text-cyan-400 group-hover:rotate-45 transition duration-300"></i>
+            <span id="header-active-color-dot" class="w-2 h-2 rounded-full ring-1 ring-white/50 shadow-sm" style="background-color: var(--theme-primary);"></span>
+          </button>
+
+          <!-- Palette Dropdown Popover -->
+          <div id="palette-dropdown" class="hidden absolute top-full mt-3 end-0 w-80 p-4 rounded-3xl glass-panel shadow-2xl border border-slate-700/90 z-50 backdrop-blur-2xl transition-all duration-200">
+            <div class="flex items-center justify-between pb-3 mb-3 border-b border-slate-800">
+              <div class="flex items-center gap-2">
+                <i data-lucide="palette" class="w-4 h-4 text-cyan-400"></i>
+                <div>
+                  <h4 class="text-xs font-bold text-slate-100" data-i18n="palette.title">سمات وألوان الواجهة</h4>
+                  <span class="text-[10px] text-slate-400" data-i18n="palette.subtitle">تغيير الألوان بنقرة واحدة فائقة السرعة</span>
+                </div>
+              </div>
+              <button id="palette-reset-btn" class="text-[11px] text-slate-400 hover:text-cyan-400 transition flex items-center gap-1 bg-slate-800/60 px-2 py-1 rounded-lg border border-slate-700/60" title="استعادة اللون الافتراضي">
+                <i data-lucide="rotate-ccw" class="w-3 h-3"></i>
+                <span data-i18n="palette.reset">استعادة</span>
+              </button>
+            </div>
+
+            <!-- Palettes List Container -->
+            <div id="palettes-container" class="grid grid-cols-1 gap-1.5 mb-3 max-h-56 overflow-y-auto pr-1">
+              <!-- Dynamically populated -->
+            </div>
+
+            <!-- Custom Color Picker Bar -->
+            <div class="pt-2.5 border-t border-slate-800 flex items-center justify-between bg-slate-900/60 p-2.5 rounded-2xl border border-slate-800">
+              <label for="custom-color-input" class="text-xs font-medium text-slate-300 flex items-center gap-2 cursor-pointer">
+                <i data-lucide="pipette" class="w-3.5 h-3.5 text-cyan-400"></i>
+                <span data-i18n="palette.custom">لون مخصص بالكامل:</span>
+              </label>
+              <div class="flex items-center gap-2">
+                <span id="custom-color-hex" class="text-[11px] font-mono text-cyan-400 font-bold uppercase">#6366F1</span>
+                <input type="color" id="custom-color-input" value="#6366F1" class="w-7 h-7 rounded-lg cursor-pointer bg-transparent border-0 p-0">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Back to Main Portfolio -->
+        <a href="index.html" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-indigo-600 via-indigo-500 to-cyan-500 hover:from-indigo-500 hover:to-cyan-400 text-white text-xs font-bold shadow-lg shadow-indigo-500/25 transition shimmer-btn">
+          <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          <span data-i18n="acadNav.backBtn">البورتفوليو العام</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-xl bg-slate-800/80 text-slate-300 hover:text-white border border-slate-700">
+          <i data-lucide="menu" class="w-5 h-5"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu Drawer -->
+    <div id="mobile-menu-drawer" class="hidden lg:hidden border-t border-slate-800 bg-[#0B0F19]/95 backdrop-blur-2xl px-6 py-5 space-y-3">
+      <a href="index.html" class="block py-2 text-sm font-medium text-slate-200 hover:text-cyan-400" data-i18n="acadNav.mainHome">الرئيسية العام</a>
+      <a href="#courses" class="block py-2 text-sm font-medium text-slate-200 hover:text-cyan-400" data-i18n="acadNav.courses">المساقات والأبحاث</a>
+      <a href="#projects" class="block py-2 text-sm font-medium text-slate-200 hover:text-cyan-400" data-i18n="acadNav.projects">معرض الأعمال</a>
+      <a href="#mentorship" class="block py-2 text-sm font-medium text-slate-200 hover:text-cyan-400" data-i18n="acadNav.mentorship">إنجازات الطلاب</a>
+      <a href="#resources" class="block py-2 text-sm font-medium text-slate-200 hover:text-cyan-400" data-i18n="acadNav.resources">الموارد العلمية</a>
+      
+      <!-- Mobile Color Selector -->
+      <div class="pt-3 border-t border-slate-800">
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-xs font-semibold text-slate-300 flex items-center gap-1.5">
+            <i data-lucide="palette" class="w-3.5 h-3.5 text-cyan-400"></i>
+            <span data-i18n="palette.title">ألوان السمة:</span>
+          </span>
+          <span id="mobile-active-palette-name" class="text-[11px] text-cyan-400 font-medium"></span>
+        </div>
+        <div id="mobile-palettes-row" class="flex items-center gap-2 overflow-x-auto py-1">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <div class="pt-3 border-t border-slate-800">
+        <a href="index.html" class="w-full text-center py-2.5 rounded-xl bg-indigo-600 text-white font-bold text-xs block" data-i18n="acadNav.backBtn">البورتفوليو العام</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="relative z-10">
+
+    <!-- ============================================================
+         1. ACADEMIC HERO SECTION
+         ============================================================ -->
+    <section id="academic-hero" class="pt-12 pb-20 md:pt-20 md:pb-28 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Text Content -->
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-right">
+            
+            <!-- Academic Badge -->
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800/80 border border-slate-700/80 shadow-md backdrop-blur-md">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+              <span class="text-xs font-semibold text-cyan-300" data-i18n="academicHero.badge">
+                🎓 كلية تكنولوجيا المعلومات | قسم هندسة البرمجيات والواجهات
+              </span>
+            </div>
+
+            <!-- Main Heading -->
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-100 leading-tight tracking-tight">
+              <span data-i18n="academicHero.title1">البوابـة الأكاديميــة والمعـــرض المهني:</span>
+              <br class="hidden sm:inline">
+              <span class="gradient-text-primary" data-i18n="academicHero.title2">التدريـس، البحـث، وبنـاء الواجهـات الذكيـة</span>
+            </h1>
+
+            <!-- Summary Paragraph -->
+            <p class="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed mx-auto lg:mx-0 font-medium" data-i18n="academicHero.summary">
+              منصة توثق التدريس الجامعي لمساقات تطوير الويب وهندسة البرمجيات، النشر البحثي في تفاعل الإنسان مع الحاسوب (HCI)، والإشراف الأكاديمي على مشاريع التخرج، بالتكامل مع أتمتة الذكاء الاصطناعي (AI & Vibe Coding).
+            </p>
+
+            <!-- Quick Action Buttons -->
+            <div class="pt-4 flex flex-wrap gap-3 justify-center lg:justify-start">
+              <a href="#courses" class="shimmer-btn px-6 py-3.5 rounded-2xl bg-gradient-to-r from-indigo-600 via-indigo-500 to-cyan-500 hover:from-indigo-500 hover:to-cyan-400 text-white font-bold text-sm shadow-xl shadow-indigo-600/30 flex items-center gap-2 transition transform hover:-translate-y-0.5">
+                <i data-lucide="book-open" class="w-4 h-4"></i>
+                <span data-i18n="academicHero.btnCourses">تصفح المساقات والأبحاث</span>
+              </a>
+              <a href="#projects" class="px-6 py-3.5 rounded-2xl glass-card text-slate-200 hover:text-white font-bold text-sm flex items-center gap-2 border border-slate-700/80 hover:border-cyan-400 transition transform hover:-translate-y-0.5">
+                <i data-lucide="layout-grid" class="w-4 h-4 text-cyan-400"></i>
+                <span data-i18n="academicHero.btnProjects">استعراض المشاريع</span>
+              </a>
+              <button id="cv-academic-trigger" class="px-5 py-3.5 rounded-2xl bg-slate-800/80 hover:bg-slate-700/80 text-slate-300 hover:text-white font-semibold text-sm border border-slate-700 flex items-center gap-2 transition">
+                <i data-lucide="file-text" class="w-4 h-4 text-indigo-400"></i>
+                <span data-i18n="academicHero.btnCV">الملف الأكاديمي (CV)</span>
+              </button>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="pt-8 grid grid-cols-2 sm:grid-cols-4 gap-4 border-t border-slate-800/80">
+              <div class="p-3.5 rounded-2xl bg-slate-900/50 border border-slate-800 text-center">
+                <span class="block text-2xl lg:text-3xl font-black text-cyan-400 font-mono">+650</span>
+                <span class="text-xs text-slate-400 font-medium" data-i18n="academicHero.stat1">طالب ومتدرب</span>
+              </div>
+              <div class="p-3.5 rounded-2xl bg-slate-900/50 border border-slate-800 text-center">
+                <span class="block text-2xl lg:text-3xl font-black text-indigo-400 font-mono">12+</span>
+                <span class="text-xs text-slate-400 font-medium" data-i18n="academicHero.stat2">مساق ورشة عمل</span>
+              </div>
+              <div class="p-3.5 rounded-2xl bg-slate-900/50 border border-slate-800 text-center">
+                <span class="block text-2xl lg:text-3xl font-black text-purple-400 font-mono">+35</span>
+                <span class="text-xs text-slate-400 font-medium" data-i18n="academicHero.stat3">مشروع تطبيقي</span>
+              </div>
+              <div class="p-3.5 rounded-2xl bg-slate-900/50 border border-slate-800 text-center">
+                <span class="block text-2xl lg:text-3xl font-black text-emerald-400 font-mono">5</span>
+                <span class="text-xs text-slate-400 font-medium" data-i18n="academicHero.stat4">أبحاث وأدلة</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Academic Visual Card -->
+          <div class="lg:col-span-5 relative flex justify-center">
+            
+            <div class="w-full max-w-md glass-card p-6 sm:p-8 rounded-3xl relative overflow-hidden border border-slate-800 shadow-2xl space-y-6">
+              
+              <!-- Top Avatar Badge -->
+              <div class="flex items-center gap-4">
+                <img src="assets/images/avatar.jpg" alt="م. حسين بلفقيه" class="w-16 h-16 rounded-2xl object-cover border-2 border-indigo-500/40 shadow-lg">
+                <div>
+                  <h3 class="font-bold text-slate-100 text-lg">م. حسين بلفقيه</h3>
+                  <p class="text-xs text-cyan-400 font-mono">Teaching Assistant & Frontend Architect</p>
+                  <span class="inline-block text-[11px] text-slate-400 mt-0.5">Faculty of IT • Software Engineering</span>
+                </div>
+              </div>
+
+              <!-- Academic Pillars Checklist -->
+              <div class="space-y-3 pt-2 border-t border-slate-800">
+                <div class="flex items-start gap-3 p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                  <i data-lucide="graduation-cap" class="w-5 h-5 text-cyan-400 shrink-0 mt-0.5"></i>
+                  <div>
+                    <h4 class="text-xs font-bold text-slate-100">التدريس الجامعي والإرشاد</h4>
+                    <p class="text-[11px] text-slate-400 leading-snug">تدريس المساقات العملية وتدريب الطلاب على أنماط الكود النظيف والتفكير المعماري.</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3 p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                  <i data-lucide="bot" class="w-5 h-5 text-purple-400 shrink-0 mt-0.5"></i>
+                  <div>
+                    <h4 class="text-xs font-bold text-slate-100">أتمتة الذكاء الاصطناعي (AI & Vibe Coding)</h4>
+                    <p class="text-[11px] text-slate-400 leading-snug">دمج نماذج LLM وأدوات توليد الكود في المعامل الدراسية ومسارات الإنتاج.</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3 p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                  <i data-lucide="microscope" class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5"></i>
+                  <div>
+                    <h4 class="text-xs font-bold text-slate-100">البحث في تفاعل الإنسان والحاسوب (HCI)</h4>
+                    <p class="text-[11px] text-slate-400 leading-snug">تقييم سهولة الاستخدام واستبقاء المعرفة في البيئات والمنصات التعليمية الذكية.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Download Quick Syllabus -->
+              <a href="#resources" class="w-full py-3 px-4 rounded-xl bg-indigo-600/20 hover:bg-indigo-600/30 text-cyan-300 border border-indigo-500/30 text-xs font-bold flex items-center justify-center gap-2 transition">
+                <i data-lucide="file-spread-sheet" class="w-4 h-4"></i>
+                <span>استكشاف الحقائب والخطط الدراسية</span>
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         2. ACADEMIC COURSES & RESEARCH SECTION (المساقات والأبحاث)
+         ============================================================ -->
+    <section id="courses" class="py-16 md:py-24 relative bg-slate-950/40 border-t border-slate-800/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto space-y-4 mb-12">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 text-cyan-400 border border-indigo-500/20 text-xs font-bold uppercase tracking-wider">
+            <i data-lucide="book-open" class="w-3.5 h-3.5"></i>
+            <span data-i18n="acadCourses.tag">المساقات الدراسية والأبحاث</span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-100" data-i18n="acadCourses.title">
+            المحتوى الأكاديمي، الأبحاث، والمسارات التدريبية
+          </h2>
+          <p class="text-sm sm:text-base text-slate-400" data-i18n="acadCourses.subtitle">
+            قائمة بالمساقات والورش الدراسية والأوراق البحثية التي أدرسها وأشرف عليها في الجامعة.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="flex flex-wrap justify-center gap-2 mb-10">
+          <button class="acad-filter-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-indigo-600 text-white shadow-md shadow-indigo-500/30" data-acad-filter="all" data-i18n="acadCourses.tabAll">
+            الكل (All)
+          </button>
+          <button class="acad-filter-btn px-4 py-2 rounded-xl text-xs font-bold transition text-slate-400 hover:text-white bg-slate-800/60 border border-slate-700/60" data-acad-filter="frontend" data-i18n="acadCourses.tabFrontend">
+            تطوير الواجهات (Frontend)
+          </button>
+          <button class="acad-filter-btn px-4 py-2 rounded-xl text-xs font-bold transition text-slate-400 hover:text-white bg-slate-800/60 border border-slate-700/60" data-acad-filter="uiux" data-i18n="acadCourses.tabUiux">
+            أنظمة التصميم (UI/UX)
+          </button>
+          <button class="acad-filter-btn px-4 py-2 rounded-xl text-xs font-bold transition text-slate-400 hover:text-white bg-slate-800/60 border border-slate-700/60" data-acad-filter="ai" data-i18n="acadCourses.tabAi">
+            أتمتة الذكاء الاصطناعي (AI & Vibe Coding)
+          </button>
+          <button class="acad-filter-btn px-4 py-2 rounded-xl text-xs font-bold transition text-slate-400 hover:text-white bg-slate-800/60 border border-slate-700/60" data-acad-filter="research" data-i18n="acadCourses.tabResearch">
+            الأبحاث والمطبوعات (Research)
+          </button>
+        </div>
+
+        <!-- Courses & Research Cards Grid -->
+        <div id="acad-courses-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Populated dynamically from js/academic.js -->
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         3. PROJECTS & LAB SHOWCASE (معرض الأعمال والمشاريع التطبيقية)
+         ============================================================ -->
+    <section id="projects" class="py-16 md:py-24 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+          <div class="space-y-3">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 text-cyan-400 border border-indigo-500/20 text-xs font-bold uppercase tracking-wider">
+              <i data-lucide="layout-grid" class="w-3.5 h-3.5"></i>
+              <span data-i18n="acadProjects.tag">المعرض الهندسي والتطبيقي</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-100" data-i18n="acadProjects.title">
+              مشاريع الويب والحلول البرمجية المتطورة
+            </h2>
+          </div>
+
+          <!-- Search Bar -->
+          <div class="w-full md:w-72 relative">
+            <input type="text" id="acad-project-search" placeholder="بحث باسم المشروع أو التقنية..." class="w-full pl-10 pr-4 py-2.5 rounded-xl bg-slate-900/80 border border-slate-700/80 text-xs text-slate-100 focus:outline-none focus:border-indigo-500 transition">
+            <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3 top-3"></i>
+          </div>
+        </div>
+
+        <!-- Projects Grid Container -->
+        <div id="acad-projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Rendered dynamically -->
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         4. STUDENT MENTORSHIP & ACHIEVEMENTS (إنجازات الطلاب والورش)
+         ============================================================ -->
+    <section id="mentorship" class="py-16 md:py-24 relative bg-slate-950/40 border-t border-slate-800/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto space-y-4 mb-12">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 text-cyan-400 border border-indigo-500/20 text-xs font-bold uppercase tracking-wider">
+            <i data-lucide="award" class="w-3.5 h-3.5"></i>
+            <span data-i18n="mentorship.tag">الأثر الأكاديمي والطلابي</span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-100" data-i18n="mentorship.title">
+            مشاريع التخرج المؤطرة وإشادات الطلاب
+          </h2>
+          <p class="text-sm sm:text-base text-slate-400" data-i18n="mentorship.subtitle">
+            نماذج من المشاريع المتميزة التي أشرف عليها م. حسين بلفقيه وشهادات المتميزين في الورش التدريبية.
+          </p>
+        </div>
+
+        <!-- Mentorship Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          
+          <div class="glass-card p-6 rounded-3xl border border-slate-800 space-y-4">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-indigo-500/10 text-cyan-400 flex items-center justify-center font-bold text-sm font-mono">01</div>
+              <div>
+                <h3 class="font-bold text-slate-100 text-sm">منصة التعليم التكيفي المباشر</h3>
+                <span class="text-xs text-indigo-400 font-mono">مشروع تخرج ممتاز 2024</span>
+              </div>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              مشروع تخرج تحت إشرافي الأكاديمي يبني واجهة تعليمية تفاعلية تتكيف مع قدرات الطالب الاستيعابية باستخدام أتمتة الذكاء الاصطناعي وبنية Next.js.
+            </p>
+            <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-800 font-mono">
+              <span>تقييم اللجنة: 98%</span>
+              <span>4 طلاب مُؤطَرين</span>
+            </div>
+          </div>
+
+          <div class="glass-card p-6 rounded-3xl border border-slate-800 space-y-4">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center font-bold text-sm font-mono">02</div>
+              <div>
+                <h3 class="font-bold text-slate-100 text-sm">نظام إدارة المكتبات الرقمية والجامعية</h3>
+                <span class="text-xs text-indigo-400 font-mono">مشروع تخرج متميز 2023</span>
+              </div>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              تطبيق ويب متكامل لإدارة المصادر والمراجع الأكاديمية وربط معارفي الكود النظيف بتجربة مستخدم سهلة وسريعة للغاية للباحثين والطلاب.
+            </p>
+            <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-800 font-mono">
+              <span>تقييم اللجنة: 96%</span>
+              <span>3 طلاب مُؤطَرين</span>
+            </div>
+          </div>
+
+          <div class="glass-card p-6 rounded-3xl border border-slate-800 space-y-4">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center font-bold text-sm font-mono">03</div>
+              <div>
+                <h3 class="font-bold text-slate-100 text-sm">مُعسكر أتمتة البرمجة (AI Vibe Coding Bootcamp)</h3>
+                <span class="text-xs text-indigo-400 font-mono">ورشة تدريبية مكثفة</span>
+              </div>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              تدريب أكثر من 180 طالباً ومطوراً على تقنيات توليد الكود السريع، هندسة الأوامر المتقدمة، وتطوير واجهات المستخدم الاحترافية في زمن قياسي.
+            </p>
+            <div class="pt-2 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-800 font-mono">
+              <span>معدل الرضا: 99%</span>
+              <span>+180 متدرب</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         5. ACADEMIC RESOURCES & DOWNLOADS (حقيبة الموارد والأدوات)
+         ============================================================ -->
+    <section id="resources" class="py-16 md:py-24 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="glass-panel p-8 sm:p-12 rounded-3xl border border-slate-800 relative overflow-hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <div class="lg:col-span-8 space-y-4">
+              <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-bold">
+                <i data-lucide="download-cloud" class="w-4 h-4"></i>
+                <span>حقيبة الموارد المتاحة للتحميل والاطلاع</span>
+              </div>
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-100">
+                المخططات التوضيحية، الأدلة العلمية، وملفات السيرة الأكاديمية
+              </h2>
+              <p class="text-sm text-slate-300 max-w-xl leading-relaxed">
+                يمكنك تحميل دليل مساقات الفرونت إند، خطة أتمتة الذكاء الاصطناعي Vibe Coding، والسيرة الذاتية الأكاديمية الكاملة بصيغة PDF.
+              </p>
+            </div>
+
+            <div class="lg:col-span-4 flex flex-col gap-3">
+              <button id="download-academic-cv" class="w-full py-3.5 px-5 rounded-2xl bg-gradient-to-r from-indigo-600 to-cyan-500 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-lg shadow-indigo-600/25 transition shimmer-btn">
+                <i data-lucide="download" class="w-4 h-4"></i>
+                <span>تحميل السيرة الذاتية الأكاديمية (Academic CV)</span>
+              </button>
+
+              <button id="download-syllabus-pack" class="w-full py-3.5 px-5 rounded-2xl bg-slate-800/90 hover:bg-slate-700/90 text-slate-200 border border-slate-700 text-xs font-bold flex items-center justify-center gap-2 transition">
+                <i data-lucide="folder-archive" class="w-4 h-4 text-cyan-400"></i>
+                <span>تحميل حقيبة أدلة التدريس ومشاريع الويب</span>
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="border-t border-slate-800/80 bg-slate-950/80 py-10 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-xl bg-indigo-600/30 text-cyan-400 flex items-center justify-center font-mono font-bold text-sm">
+          HB
+        </div>
+        <div>
+          <span class="text-sm font-bold text-slate-200 block">حسين بلفقيه • البوابة الأكاديمية</span>
+          <span class="text-xs text-slate-500">© 2026 جميع الحقوق محفوظة</span>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-4 text-xs text-slate-400">
+        <a href="index.html" class="hover:text-cyan-400 transition">الرئيسية العام</a>
+        <span>•</span>
+        <a href="#courses" class="hover:text-cyan-400 transition">المساقات الأكاديمية</a>
+        <span>•</span>
+        <a href="#projects" class="hover:text-cyan-400 transition">المعرض المهني</a>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- Floating Quick Color Dock -->
+  <aside id="floating-color-bar" class="fixed bottom-6 start-6 z-40 flex items-center gap-2 p-1.5 sm:p-2 rounded-2xl glass-panel border border-slate-700/80 shadow-2xl backdrop-blur-2xl transition-all duration-300" aria-label="شريط ألوان الموقع السريع">
+    <button id="floating-palette-btn" class="p-2 rounded-xl bg-slate-800/80 text-cyan-400 hover:text-white hover:bg-slate-700/80 transition flex items-center gap-1.5 focus:outline-none" title="تغيير ثيم ولون الواجهة بنقرة واحدة">
+      <i data-lucide="palette" class="w-4 h-4"></i>
+      <span class="hidden md:inline text-[11px] font-bold text-slate-200">الألوان السريعة</span>
+    </button>
+    <div id="floating-swatches" class="flex items-center gap-1.5">
+      <!-- Injected by ColorThemeManager -->
+    </div>
+  </aside>
+
+
+  <!-- Toast Notification -->
+  <div id="toast-notification" class="fixed bottom-6 right-6 z-50 flex items-center gap-3 px-5 py-3.5 rounded-2xl glass-panel border border-emerald-500/40 text-emerald-300 text-xs font-bold shadow-2xl transition-all duration-300 transform translate-y-24 opacity-0">
+    <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-400"></i>
+    <span id="toast-message">تم إنجاز العملية بنجاح!</span>
+  </div>
+
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/academic.js"></script>
+</body>
+</html>
